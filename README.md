@@ -3,6 +3,7 @@ The Social media website called Linkup was created with the multile functionalit
 **The Tech Stacks used are**
 
 1.HTML
+
 2.CSS
 
 3.Flask

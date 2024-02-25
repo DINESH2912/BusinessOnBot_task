@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="all-users dark-space-theme">
+    <div class="contain">
+        <h1 class="space-title">All Users</h1>
+        <table class="space-table">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>User ID</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for index in range(users|length) %}
+                <tr>
+                    <td>{{ users[index] }}</td>
+                    <td>{{ user_id[index] }}</td>
+                    <td>
+                        <button type="button" class="follow-button space-button">Follow</button>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>
+{% endblock %}
